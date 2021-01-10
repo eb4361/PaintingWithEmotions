@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      margin: 2%;
+      padding: 0;
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      background-image: url('pics/background.jpg');
+      background-size: cover;
+    }
+
+    canvas {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div>
+      <video id="video" style="margin-top:0.5%" width="360" height="280" autoplay muted></video>
+    </div>
+    <div style="margin-top:5%;">
+      <img src="pics/playButton.png" id="playButton" style="margin:1%; height: 60px; width: 60px">
+      <img src="pics/stopButton.png" id="stopButton" style="margin:1%; height: 60px; width: 60px">
+      <img src="pics/downloadButton.png" id="downloadButton" align="right" style="margin:1%; height: 60px; width: 60px">
+    </div>
+    <div style="margin-top:30%;" align="center">
+      <img src="pics/abstract.jpg" id="style1" style="height: 125px; width: 105px">
+      <img src="pics/brushes.jpg" id="style2" style="height: 125px; width: 105px">
+      <img src="pics/geometric.jpg" id="style3" style="height: 125px; width: 105px">
+    </div>
+  </div>
+  <div>
+    <canvas id="myCanvas" width="900" height="600"
+            style="border:1px solid #000000;margin-top: 0.5%;margin-left: 1.5%; border-radius: 20px; border-color:#51b581">
+    </canvas>
+  </div>
+  <div>
+    <canvas id="historyCanvas" width="150" height="600"
+            style="border:1px solid #000000;margin-top: 0.5%;margin-left: 62%; border-radius: 20px; border-color:#51b581">
+    </canvas>
+  </div>
+</body>
+</html>
